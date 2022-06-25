@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloudinary tutorial</title>
-    <script src="./upload.js"></script>
-  </head>
-  <body>
-    <form action="/action_page.php">
-      <input type="file" id="myFile" name="filename">
-      <input type="submit">
+<title>Cloudinary tutorial</title>
+</head>
+
+<body>
+    <form action="/api/images" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit">
     </form>
-  </body>
+
+  <p id="data"></p>
+
+  <script src="./upload.js"></script>
+
+</body>
 </html>
